@@ -1,0 +1,25 @@
+<form action="employee" method="POST" autocomplete="off">
+<input type="hidden" name="_id" value="{{employee._id}}">
+<div class="form-group">
+<label>fullname</label>
+<input type="hidden" name="fullname" placeholder="fullname" value="{{employee.fullname}}">
+</div>
+<div class="form-group">
+<label>email</label>
+<input type="hidden" name="email" placeholder="email" value="{{employee.email}}">
+</div>
+<div class="form-row">
+<div class="form-group col-md-6" >
+<label>contact</label>
+<input type="hidden" name="contact" placeholder="contact" value="{{employee.contact}}">
+</div>
+<div class="form-group col-md-6">
+<label>city</label>
+<input type="hidden" name="city" placeholder="city" value="{{employee.city}}">
+</div>
+</div>
+<div class="form-group">
+    <button type="submit" class="btn-btn-info"><i class="fa fa-database">submit</i></button>
+    <a class="btn btn-secondary" href="/employee/list"><i class="fa fa-list-alt">view list</i></a>
+</div>
+</form>
